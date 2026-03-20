@@ -22,12 +22,12 @@ export default function CountryRecipes() {
     <div>
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Explorar por Países</h2>
       
-      <div className="flex flex-wrap gap-3 mb-12 justify-center max-w-5xl mx-auto">
+      <div className="flex flex-wrap gap-3 mb-12 justify-center max-w-5xl mx-auto ">
         {areas.map(area => (
           <button 
             key={area.strArea}
             onClick={() => setSelectedArea(area.strArea)}
-            className={`px-5 py-2 rounded-full font-medium transition-all duration-300 ${
+            className={`px-5 py-2 rounded-full cursor-pointer font-medium transition-all duration-300 ${
               selectedArea === area.strArea 
               ? 'bg-amber-600 text-white shadow-md transform scale-105' 
               : 'bg-white text-gray-600 hover:bg-amber-50 hover:text-amber-600 border border-gray-200'
